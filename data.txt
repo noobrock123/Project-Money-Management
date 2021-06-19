@@ -1,0 +1,3 @@
+List                        Change                      Balance
+A                           -30                         -30
+B                           150                         120
