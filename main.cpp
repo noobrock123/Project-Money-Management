@@ -12,7 +12,7 @@ int main()
 {
 	cout << "Initializing file..." << endl;
     std::fstream inFile;
-    inFile.open("data.txt", std::ios::in);
+    inFile.open("DATA.file", std::ios::in);
     if (!inFile.is_open()) {
         std::cerr << "Error: File is either missing or corrupted." << endl;
         return 1;
@@ -130,7 +130,7 @@ int main()
                 break;
             case 5:
                 cout << "Saving..." << endl;
-                inFile.open("data.txt", std::ios::out);
+                inFile.open("DATA.file", std::ios::out);
                 inFile << std::left;
                 inFile << "List                        Change                      Balance" << endl;
                 for (size_t i = 0; i < lists.size(); i++) {
